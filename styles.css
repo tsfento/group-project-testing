@@ -1,0 +1,253 @@
+.layout {
+    display: grid;
+    grid:
+        "sidebar body" 1fr
+        / auto 1fr;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+    height: 100vh;
+}
+
+.body {
+    grid-area: body;
+    background-color: #F9DEC9;
+}
+
+.offcanvas {
+    /* background-color: #ededed; */
+    background-color: #F9DEC9;
+}
+
+.offcanvas-header {
+    background-color: #3A405A;
+    color: white;
+}
+
+.offcanvas-parent {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(680px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.offcanvas-box {
+    width: 695px;
+    height: 265px;
+    background-color: #ededed;
+    box-shadow: 2px 2px 5px #3A405A;
+    border: 1px solid #3A405A;
+    border-radius: 10px;
+    box-shadow: inset;
+    position: relative;
+}
+
+.box-header-icon {
+    font-size: 30px;
+    vertical-align:bottom;
+}
+
+.offcanvas-box-header {
+    font-size: 20px;
+    color: grey;
+}
+
+.offcanvas-box-body {
+    height: 185px;
+    overflow-y: auto;
+    scrollbar-color: darkgrey lightgrey;
+    scrollbar-width: thin;
+}
+
+/* Chrome Scrollbar */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgrey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgrey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+/* End Chrome Scrollbar */
+
+.btn-offcanvas-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #E9AFA3;
+    color: #3A405A;
+}
+
+.btn-offcanvas-box:hover {
+    background-color: #3A405A;
+    color: #ededed;
+}
+
+.box-button-icon {
+    vertical-align: bottom;
+}
+
+.employee-parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.employee-box {
+    width: 309px;
+    height: 309px;
+    background-color: #3A405A;
+    color: white;
+    border-radius: 20px;
+}
+
+.employee-box a {
+    text-decoration: none;
+    color: white;
+}
+
+.employee-box a:hover {
+    color: #F9DEC9;
+}
+
+.details {
+    width: 75% !important;
+}
+
+.click {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebar-div {
+    width: 280px;
+    height: 100%;
+    background-color: #3A405A;
+}
+
+hr {
+    color: white;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #FCF7F8;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
+
+.email {
+    font-size: 12px;
+    color: white;
+}
+
+.logout {
+    color: white;
+    font-size: 18px;
+}
+
+.logout:hover {
+    color: #F9DEC9;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.company-name {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.btn-sidebar {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-sidebar:hover {
+    color: #F9DEC9;
+}
+
+.btn-icon {
+    font-size: 30px;
+    vertical-align: bottom;
+}
+
+.logo-icon {
+    font-size: 40px;
+    vertical-align: bottom;
+}
+
+.btn-text {
+    font-size: 20px;
+}
+
+.employee-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.employee-name {
+    font-size: 22px;
+    line-height: .5;
+}
+
+.employee-title {
+    font-size: 15px;
+    line-height: .5;
+}
+
+.employee-email {
+    font-size: 15px;
+    line-height: .5;
+}
+
+.navbar {
+    border-bottom: 1px solid white;
+    background-color: #3A405A;
+}
+
+.top-nav {
+    border-bottom: 1px solid white;
+    background-color: #3A405A;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #F9DEC9;
+}
+
+.btn-search {
+    background-color: #F9DEC9;
+    line-height: 1;
+}
+
+.btn-search:hover {
+    background-color: #E9AFA3;
+}
