@@ -100,12 +100,35 @@
     vertical-align: bottom;
 }
 
+.employee-list-button-icon {
+    vertical-align: bottom;
+    font-size: 35px;
+}
+
+.btn-employee-list {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 65px;
+    height: 65px;
+    background-color: #E9AFA3;
+    color: #3A405A;
+    border-radius: 50%;
+}
+
+.btn-employee-list:hover {
+    background-color: #3A405A;
+    color: #ededed;
+}
+
 .employee-parent {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, 306px);
     grid-template-rows: repeat(auto-fit, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    grid-auto-flow: row;
+    gap: 15px;
 }
 
 .employee-box {
